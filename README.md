@@ -1,46 +1,68 @@
-# Getting Started with Create React App
+# Stroke_Index_Page
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The stroke scenarios or cases can be launched from this page by clicking on the Start button.
 
-## Available Scripts
+## Stroke Scenarios
 
-In the project directory, you can run:
+- Holly Hill
+- Ravi Kumar
+- Lucy Locklear
+- Natalia Batista
+- Ross Bennett
+- Nam Truong
+- Adair Cantanton
+- Leone Abrams
 
-### `npm start`
+```mermaid
+graph TD
+    A[stroke-index]
+    A1[.gitignore]
+    A2[package.json]
+    A3[README.md]
+    A4[Stroke_Index_Page.code-workspace]
+    A5[tsconfig.json]
+    A6[public]
+    A7[src]
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+    A --> A1
+    A --> A2
+    A --> A3
+    A --> A4
+    A --> A5
+    A --> A6
+    A --> A7
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+    A6 --> B1[index.html]
+    A6 --> B2[manifest.json]
+    A6 --> B3[robots.txt]
+    A6 --> B4[assets]
+    B4 --> C1[cards-img]
+    B4 --> C2[stroke]
+    C2 --> D1[icons]
 
-### `npm test`
+    A7 --> E1[App.css]
+    A7 --> E2[App.test.tsx]
+    A7 --> E3[App.tsx]
+    A7 --> E4[assets]
+    A7 --> E5[components]
+    A7 --> E6[extendedstyles.ts]
+    A7 --> E7[index.css]
+    A7 --> E8[index.tsx]
+    A7 --> E9[react-app-env.d.ts]
+    A7 --> E10[reportWebVitals.ts]
+    A7 --> E11[scenariosUrls.ts]
+    A7 --> E12[setupTests.ts]
+    A7 --> E13[strokePatientsData.ts]
+    A7 --> E14[theme.css]
+    A7 --> E15[theme.ts]
+    A7 --> E16[tIdConstants.tsx]
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+    E4 --> F1[stroke]
 
-### `npm run build`
+    E5 --> G1[NameWithIcon.tsx]
+    E5 --> G2[ScenarioCard.tsx]
+    E5 --> G3[StrokeIndexTopBar.tsx]
+    E5 --> G4[TipsBox.tsx]
+    E5 --> G5[TipItem.tsx]
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+```

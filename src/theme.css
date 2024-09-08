@@ -1,0 +1,48 @@
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.index-card-container {         
+    padding: '8px 0', 
+}
+
+.indexCardBoxContainer {
+    background-color: #25837E;
+    width: 100%; /* Full width of the parent container (card) */
+    height: auto; /* Fixed height for consistency across all cards */
+    display: flex; /* Center content vertically and horizontally */
+    align-items: center;
+    justify-content: left;
+    margin: 0;
+    margin-top: -0.125rem;
+    padding: 0;
+    padding-left: 1rem;
+    box-sizing: border-box;
+}
+
+.cardBottom {
+    display: 'flex'; 
+    flex-direction: 'column'; 
+    align-items: 'center'; 
+    padding: .5rem 0 0 1rem;
+}
+
+.contentSeparator{
+    border: 0.063rem solid #E5E5E5; /*1px*/
+    width: 90%; 
+    margin: 0;
+    padding-left: 1rem;
+}
+
+.topAlignedIcon {
+    align-self: flex-start;
+    margin-right: 1rem;
+}
+
+.topAlignedList {
+    margin-top: 0; 
+    margin-left: 1rem;
+    padding: 0;
+    list-style-type: disc; 
+  }
+
