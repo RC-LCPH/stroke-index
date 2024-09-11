@@ -88,12 +88,12 @@ const theme = createTheme({
           fontSize: '1.25rem',
           textTransform: 'none', 
           '&.Mui-selected': {
-            color: 'black', // Set text color to black when selected
+            color: 'black', 
             fontWeight: 'bold', 
-            borderTop: '2px solid #CCCCCC', // Add top border
-            borderLeft: '2px solid #CCCCCC', // Add left border
-            borderRight: '2px solid #CCCCCC', // Add right border
-// Set text to bold when selected
+            borderTop: '0.125rem solid #CCCCCC', 
+            borderLeft: '0.063rem solid #CCCCCC', 
+            borderRight: '0.063rem solid #CCCCCC', 
+            borderBottom: '0.25rem solid #FFFFFF', //thicker border to overlap line
           },
         },
       },

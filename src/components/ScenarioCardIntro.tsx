@@ -2,6 +2,8 @@ import React from 'react';
 import { Card, CardContent, CardMedia, Typography, Box, Button } from '@mui/material';
 import { bottomCardStyles, completionStatusStyle, startButtonStyle } from '../extendedstyles';
 import theme from '../theme';
+import systemIcon from '../assets/stroke/icons/System_icon.png';
+import videoIcon from '../assets/stroke/icons/VideoWhite.png';
 
 interface ScenarioCardProps {
     name: string;
@@ -25,7 +27,7 @@ interface ScenarioCardProps {
         <CardContent className="index-card-content">
           <div className='index-card-container'>
             <Box className='indexCardBoxContainer' sx={{ backgroundColor: backgroundColorVideo }}>
-              <img src="/assets/System_icon.png" alt="name icon"/>
+              <img src={status === 'Video' ? videoIcon : systemIcon} alt="name icon"/>
               <Typography variant="body2" className='patientName' gutterBottom>
                 {name}
               </Typography>           

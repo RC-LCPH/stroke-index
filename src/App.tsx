@@ -29,6 +29,10 @@ const App: React.FC = () => {
             <Tab label="Case overview" />
             <Tab label="Introduction" />
           </Tabs>
+          {/* Line below the tabs */}
+{/*           <hr style={{ border: '0.05rem solid #CCCCCC', width: '100%', marginTop: '-0.2rem'  }} />
+ */}
+           <hr className='tabsUnderline' />
           {tabIndex === 0 && (
             <Box>
               <TipsBox theme={theme} />
@@ -54,6 +58,7 @@ const App: React.FC = () => {
               </Grid>
             </Box>
           )}
+          
         </Box>
       </Container>
     </ThemeProvider>

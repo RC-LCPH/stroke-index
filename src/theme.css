@@ -45,5 +45,13 @@ body {
     padding: 0;
     margin-bottom: -0.1rem;
     list-style-type: disc; 
-  }
+}
+
+ .tabsUnderline {
+    border: 0.05rem solid #CCCCCC;
+    width: 100%;
+    margin-top: -0.2rem;
+}
+
+
 
