@@ -1,6 +1,6 @@
 import React from 'react';
 import { Card, CardContent, CardMedia, Typography, Box, Button } from '@mui/material';
-import { bottomCardStyles, completionStatusStyle, startButtonStyle } from '../extendedstyles';
+import { bottomCardStyles, startButtonStyle } from '../extendedstyles';
 import theme from '../theme';
 import CourseStatus from './CourseStatus';
 
@@ -36,13 +36,10 @@ interface ScenarioCardProps {
           </div>
           <div className="cardBottom">
             <hr className='contentSeparator'/>  
-            <Box mt={2} sx={bottomCardStyles(theme)}>
-{/*               <Typography variant="body2" gutterBottom sx={completionStatusStyle}>
-              {status === 'Incomplete' ? 'Incomplete' : 'Completed'}
-              </Typography> */}
+            <Box mt={2} sx={bottomCardStyles(theme)} display="flex" alignItems="center">
               <CourseStatus name={status === 'Incomplete' ? 'Incomplete' : 'Completed'} status={status === 'Incomplete' ? 'Incomplete' : 'Completed'} />
-              <Button variant="contained" color="primary" sx={startButtonStyle} href={url}>
-                {status === 'Incomplete' ? 'Start' : 'Try Again'}
+              <Button variant={status === 'Incomplete' ? 'contained' : 'outlined'} color="primary" sx={startButtonStyle} href={url}>
+                {status === 'Incomplete' ? 'Start' : 'Retry'}
               </Button>
             </Box>
           </div>

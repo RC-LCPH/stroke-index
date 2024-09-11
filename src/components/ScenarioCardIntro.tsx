@@ -13,6 +13,7 @@ interface ScenarioCardProps {
   
   
   const ScenarioCard: React.FC<ScenarioCardProps> = ({ name, description, imageUrl, status, url }) => {
+    const backgroundColorVideo = status === 'Video' ? '#92702F' : '#25837E';
     return (
       <Card className="index-card">
         <CardMedia
@@ -23,7 +24,7 @@ interface ScenarioCardProps {
         />
         <CardContent className="index-card-content">
           <div className='index-card-container'>
-            <Box className='indexCardBoxContainer'>
+            <Box className='indexCardBoxContainer' sx={{ backgroundColor: backgroundColorVideo }}>
               <img src="/assets/System_icon.png" alt="name icon"/>
               <Typography variant="body2" className='patientName' gutterBottom>
                 {name}
@@ -39,7 +40,7 @@ interface ScenarioCardProps {
               <Typography variant="body2" gutterBottom sx={completionStatusStyle}>
               {status === 'Incomplete' ? 'Incomplete' : ''}
               </Typography>
-              <Button variant="contained" color="primary" sx={startButtonStyle} href={url}>
+              <Button variant="outlined" color="primary" sx={startButtonStyle} href={url} disabled={true}> 
                 Start
               </Button>
             </Box>

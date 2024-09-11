@@ -2,17 +2,17 @@
 // Define the sx styles as variables
 const tipsBoxStyles = (theme: any) => ({
     backgroundColor: '#F1FBFE',
-    borderRadius: '16px',
+    borderRadius: '1rem',
     padding: {
-      md: '16px',
-      lg: '24px',
-      xl: '32px',
+      md: '1rem',
+      lg: '1.5rem',
+      xl: '2rem',
     },
     height: '60%',
     overflow: 'auto',
     pointerEvents: 'auto',
-    marginBottom: '24px', 
-    marginTop: '16px', 
+    marginBottom: '1.5rem', 
+    marginTop: '1rem', 
 });
 
 const iconStyle = {
@@ -43,9 +43,19 @@ const startButtonStyle = {
     borderRadius: '.5rem',
     fontSize: '0.875rem',
     textTransform: 'capitalize',
-    width: '5.75rem',
+    width: '4.6rem', 
+    height: '2rem',
     minWidth: '4rem',
+    borderWidth: '0.125rem',
+};
+
+const exitButtonStyle = {
+    borderRadius: '0.5rem',
+    fontSize: '0.875rem',
+    fontWeight: 700,
+    textTransform: 'capitalize',
+    borderWidth: '0.125rem',
 };
 
 // Export the styles
-export { tipsBoxStyles, iconStyle, itemBoxStyle, bottomCardStyles, completionStatusStyle, startButtonStyle };
+export { tipsBoxStyles, iconStyle, itemBoxStyle, bottomCardStyles, completionStatusStyle, startButtonStyle, exitButtonStyle };

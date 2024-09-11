@@ -12,32 +12,36 @@ const CourseStatus: React.FC<CourseStatusProps> = ({ name, status }) => {
   let backgroundColor;
   let iconColor;
   let textColor;
+  let textWeight;
   let iconSrc;
 
   switch (status) {
     case 'Completed':
-      backgroundColor = '#98D8D5'; 
-      iconColor = '#145653'; 
-      textColor = '#145653'; 
-      iconSrc = BookmarkOn; // Use BookmarkOn icon for Completed status
+      backgroundColor = '#CCEED2'; 
+      iconColor = '#13772A'; 
+      textColor = '#13772A'; 
+      textWeight = 'bold';
+      iconSrc = BookmarkOn; 
       break;
     case 'Incomplete':
       backgroundColor = '#FFFFFF'; 
       iconColor = '#666666'; 
       textColor = '#666666'; 
-      iconSrc = BookmarkOff; // Use BookmarkOff icon for Incomplete status
+      textWeight = 'normal';
+      iconSrc = BookmarkOff; 
       break;
     default:
       backgroundColor = '#FFFFFF'; 
       iconColor = '#666666'; 
       textColor = '#666666'; 
-      iconSrc = BookmarkOff; // Default to BookmarkOff icon
+      textWeight = 'normal';
+      iconSrc = BookmarkOff; 
   }
 
   return (
-    <Box display="flex" alignItems="center" bgcolor={backgroundColor} p={1} borderRadius={1}>
-      <img src={iconSrc} alt="icon" style={{ marginRight: '8px', color: iconColor, width: '16px', height: '16px' }} />
-      <Typography variant="h6" style={{ color: textColor, fontSize: '1rem' }}>
+    <Box display="flex" alignItems="center" justifyContent="center" bgcolor={backgroundColor} p={1} borderRadius={'0.125rem'} width="7rem" height="2rem">
+      <img src={iconSrc} alt="icon" style={{ marginRight: '0.25rem', color: iconColor, width: '1rem', height: '1rem' }} /> 
+      <Typography variant="body2" style={{ color: textColor, fontWeight: textWeight, fontSize: '0.9rem', marginBottom: '0.15rem' }}>
         {name}
       </Typography>
     </Box>

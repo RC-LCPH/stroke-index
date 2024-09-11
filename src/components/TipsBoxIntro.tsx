@@ -15,7 +15,7 @@ const TipsBox = ({ theme }: { theme: any }) => {
                 <Box display="flex" flexDirection="column" flex={1}>
                 <TipItem
                     iconSrc={videoIcon}
-                    text="Watch the tutorial video to learn how to use the simulation cases. Get introduced to the navigation and key functionality, and learn what steps you will be going through during the simulation cases."
+                    text="Watch the video tutorial to learn how to use the simulation cases. Get introduced to the navigation and key functionality, and learn what steps you will be going through during the simulation cases."
                     iconAlt="screens icon"
                     iconId={Location.INDEX_PAGE + "AHA" + UIElement.ICON}
                  />

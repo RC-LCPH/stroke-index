@@ -3,7 +3,7 @@ body {
 }
 
 .index-card-container {         
-    padding: '8px 0', 
+    padding: '0.5rem 0', 
 }
 
 .indexCardBoxContainer {
@@ -43,6 +43,7 @@ body {
     margin-top: 0; 
     margin-left: 1rem;
     padding: 0;
+    margin-bottom: -0.1rem;
     list-style-type: disc; 
   }
 
