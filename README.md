@@ -6,7 +6,6 @@ The stroke scenarios or cases can be launched from this page by clicking on the 
 
 - Holly Hill
 - Ravi Kumar
-- Lucy Locklear
 - Natalia Batista
 - Ross Bennett
 - Nam Truong
