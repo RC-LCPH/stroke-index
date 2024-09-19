@@ -47,6 +47,7 @@ const startButtonStyle = {
     height: '2rem',
     minWidth: '4rem',
     borderWidth: '0.125rem',
+    marginLeft: 'auto',
 };
 
 const exitButtonStyle = {

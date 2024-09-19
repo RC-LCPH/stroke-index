@@ -18,9 +18,9 @@ const StrokeIndexTopBar: React.FC = () => {
           ESLS Simulations
         </Typography>
       </Box>
-      <Button variant="outlined" color="primary" sx={exitButtonStyle}>
+    {/*   <Button variant="outlined" color="primary" sx={exitButtonStyle}>
         Exit Exercise
-      </Button>
+      </Button> */}
     </Box>
   );
 };

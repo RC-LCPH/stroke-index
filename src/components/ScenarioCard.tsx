@@ -25,7 +25,7 @@ interface ScenarioCardProps {
         <CardContent className="index-card-content">
           <div className='index-card-container'>
             <Box className='indexCardBoxContainer'>
-              <img src="/assets/System_icon.png" alt="name icon"/>
+              <img src="/stroke-index/assets/System_icon.png" alt="name icon"/>
               <Typography variant="body2" className='patientName' gutterBottom>
                 {name}
               </Typography>           
@@ -37,7 +37,7 @@ interface ScenarioCardProps {
           <div className="cardBottom">
             <hr className='contentSeparator'/>  
             <Box mt={2} sx={bottomCardStyles(theme)} display="flex" alignItems="center">
-              <CourseStatus name={status === 'Incomplete' ? 'Incomplete' : 'Completed'} status={status === 'Incomplete' ? 'Incomplete' : 'Completed'} />
+{/*               <CourseStatus name={status === 'Incomplete' ? 'Incomplete' : 'Completed'} status={status === 'Incomplete' ? 'Incomplete' : 'Completed'} /> */}
               <Button variant={status === 'Incomplete' ? 'contained' : 'outlined'} color="primary" sx={startButtonStyle} href={url}>
                 {status === 'Incomplete' ? 'Start' : 'Retry'}
               </Button>
