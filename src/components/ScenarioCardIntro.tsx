@@ -21,8 +21,11 @@ interface ScenarioCardProps {
         <CardMedia
           component="img"
           height="140"
-          image={imageUrl}
+          src="#"
           alt={name}
+          sx={{
+            content: `url(${imageUrl})`
+          }}
         />
         <CardContent className="index-card-content">
           <div className='index-card-container'>
