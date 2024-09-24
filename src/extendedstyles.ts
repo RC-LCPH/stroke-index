@@ -48,6 +48,7 @@ const startButtonStyle = {
     minWidth: '4rem',
     borderWidth: '0.125rem',
     marginLeft: 'auto',
+    fontFamily: 'Lato, sans-serif',
 };
 
 const exitButtonStyle = {
