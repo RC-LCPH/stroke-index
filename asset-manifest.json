@@ -1,15 +1,16 @@
 {
   "files": {
     "main.css": "/stroke-index/static/css/main.ec2c7ba0.css",
-    "main.js": "/stroke-index/static/js/main.47873a20.js",
+    "main.js": "/stroke-index/static/js/main.c5ee7f3e.js",
     "static/js/453.73fed29b.chunk.js": "/stroke-index/static/js/453.73fed29b.chunk.js",
+    "static/media/PoweredByLaerdal.svg": "/stroke-index/static/media/PoweredByLaerdal.7f981485389cd19a344c8bb0845fa2ef.svg",
     "index.html": "/stroke-index/index.html",
     "main.ec2c7ba0.css.map": "/stroke-index/static/css/main.ec2c7ba0.css.map",
-    "main.47873a20.js.map": "/stroke-index/static/js/main.47873a20.js.map",
+    "main.c5ee7f3e.js.map": "/stroke-index/static/js/main.c5ee7f3e.js.map",
     "453.73fed29b.chunk.js.map": "/stroke-index/static/js/453.73fed29b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ec2c7ba0.css",
-    "static/js/main.47873a20.js"
+    "static/js/main.c5ee7f3e.js"
   ]
 }
