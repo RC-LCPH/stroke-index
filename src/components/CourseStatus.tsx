@@ -1,7 +1,7 @@
 import React from 'react';
 import { Typography, Box } from '@mui/material';
-import BookmarkOff from '../assets/stroke/icons/Bookmark_off.png';
-import BookmarkOn from '../assets/stroke/icons/Bookmark_on.png';
+import BookmarkOff from '../assets/stroke/icons/Bookmark_off.svg';
+import BookmarkOn from '../assets/stroke/icons/Bookmark_on.svg';
 
 interface CourseStatusProps {
   name: string;

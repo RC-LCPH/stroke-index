@@ -2,7 +2,7 @@ import { HOLLY_HILL_URL, RAVI_KUMAR_URL, LUCY_LOCKLEAR_URL, NATALIA_BATISTA_URL,
 //TODO this is a temporary file the data should be retrieved dynamically
 export const scenarios = [
     { name: 'Holly Hill', description: 'Right arm weakness and difficulty speaking', imageUrl: `/stroke-index/assets/cards-img/Mood_HollyHill.png`, status: 'Incomplete', url: HOLLY_HILL_URL },
-    { name: 'Ravi Kumar', description: 'Dizziness', imageUrl: '/stroke-index/assets/cards-img/Mood_RaviKumar.png', status: 'Incomplete', url: RAVI_KUMAR_URL },
+   //{ name: 'Ravi Kumar', description: 'Dizziness', imageUrl: '/stroke-index/assets/cards-img/Mood_RaviKumar.png', status: 'Incomplete', url: RAVI_KUMAR_URL },
    // { name: 'Lucy Locklear', description: 'Drowsiness and garbled speech', imageUrl: '/stroke-index/assets/cards-img/Mood_LucyLocklear.png', status: 'Incomplete', url: LUCY_LOCKLEAR_URL },
     { name: 'Natalia Batista', description: 'Drowsiness, difficulty speaking and not moving right side', imageUrl: '/stroke-index/assets/cards-img/Mood_NataliaBatista.png', status: 'Incomplete', url: NATALIA_BATISTA_URL },
     { name: 'Ross Bennett', description: 'Difficulty moving left side', imageUrl: '/stroke-index/assets/cards-img/Mood_RossBennett.png', status: 'Incomplete', url: ROSS_BENNETT_URL },

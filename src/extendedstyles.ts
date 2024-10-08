@@ -51,6 +51,18 @@ const startButtonStyle = {
     fontFamily: 'Lato, sans-serif',
 };
 
+const introButtonStyle = {
+    borderRadius: '.5rem',
+    fontSize: '0.875rem',
+    textTransform: 'capitalize',
+    width: '4.6rem', 
+    height: '2rem',
+    minWidth: '4rem',
+    borderWidth: '0.125rem',
+    marginLeft: 'auto',
+    marginBottom: '-0.5rem',
+};
+
 const exitButtonStyle = {
     borderRadius: '0.5rem',
     fontSize: '0.875rem',
@@ -60,4 +72,4 @@ const exitButtonStyle = {
 };
 
 // Export the styles
-export { tipsBoxStyles, iconStyle, itemBoxStyle, bottomCardStyles, completionStatusStyle, startButtonStyle, exitButtonStyle };
+export { tipsBoxStyles, iconStyle, itemBoxStyle, bottomCardStyles, completionStatusStyle, startButtonStyle, exitButtonStyle, introButtonStyle };

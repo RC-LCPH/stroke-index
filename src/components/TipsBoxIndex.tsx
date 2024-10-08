@@ -1,12 +1,15 @@
 import React from 'react';
-import { Box } from '@mui/material';
-import { tipsBoxStyles } from '../extendedstyles'; 
+import { Box, Grid, Card, CardContent, Divider, Typography, Button} from '@mui/material';
+import { tipsBoxStyles, introButtonStyle  } from '../extendedstyles'; 
 import TipItem from './TipItem';
+import { RAVI_KUMAR_URL } from '../scenariosUrls';
 import { Location, UIElement } from "../tIdConstants";  
-import screensIcon from '../assets/stroke/icons/Screens.png'; 
-import piechartIcon from '../assets/stroke/icons/Pie_chart.png'; 
-import eSimulationIcon from '../assets/stroke/icons/E-simulation.png';
-import documentIcon from '../assets/stroke/icons/Document_checked.png'; 
+import screensIcon from '../assets/stroke/icons/Screens.svg'; 
+import piechartIcon from '../assets/stroke/icons/Pie_chart.svg'; 
+import eSimulationIcon from '../assets/stroke/icons/E-simulation.svg';
+import documentIcon from '../assets/stroke/icons/Document_checked.svg'; 
+import videoIcon from '../assets/stroke/icons/Video_48_black.svg'; 
+import eSimulationIconBlack from '../assets/stroke/icons/E-simulation_48_black.svg';
 
 
 const TipsBox = ({ theme }: { theme: any }) => {
@@ -44,6 +47,42 @@ const TipsBox = ({ theme }: { theme: any }) => {
                 />
                 </Box>
             </Box>  
+
+            <Divider sx={{ my: 3 }} />
+      
+            <Grid container spacing={2}>
+                <Grid item xs={12} md={6}>
+                    <Card sx={{ borderRadius: 1, height: '4rem' }} >
+                        <CardContent sx={{ paddingTop: '0.5rem'}}>
+                            <Box display="flex" justifyContent="space-between" alignItems="center" >
+                                <Box display="flex" alignItems="center" sx={{ mb: -1 }}>
+                                    <img  src={videoIcon} alt="" className="topAlignedIcon" />
+                                    <Typography variant="body2">Watch tutorial video</Typography>
+                                </Box>
+                                <Button variant="outlined" color="primary" sx={introButtonStyle} href="" disabled={true}> 
+                                Play
+                                </Button>
+                            </Box>
+                        </CardContent>
+                    </Card>
+                </Grid>
+                <Grid item xs={12} md={6}>
+                <Card sx={{ borderRadius: 1, height: '4rem' }}>
+                    <CardContent sx={{ paddingTop: '0.5rem'}}>
+                        <Box display="flex" justifyContent="space-between" alignItems="center">
+                            <Box display="flex" alignItems="center" sx={{ mb: -1 }}>
+                                <img  src={eSimulationIconBlack} alt="" className="topAlignedIcon" />
+                                <Typography variant="body2">Try out a patient case</Typography>
+                            </Box>
+                            <Button variant="outlined" color="primary" sx={introButtonStyle} href={RAVI_KUMAR_URL}> 
+                            Start
+                            </Button>
+                        </Box>
+                    </CardContent>
+                </Card>
+                </Grid>
+            </Grid>
+     
         </Box> 
     );
 
