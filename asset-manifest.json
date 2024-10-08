@@ -1,15 +1,25 @@
 {
   "files": {
     "main.css": "/stroke-index/static/css/main.ec2c7ba0.css",
-    "main.js": "/stroke-index/static/js/main.47873a20.js",
+    "main.js": "/stroke-index/static/js/main.87e308f7.js",
     "static/js/453.73fed29b.chunk.js": "/stroke-index/static/js/453.73fed29b.chunk.js",
+    "static/media/ESLS.svg": "/stroke-index/static/media/ESLS.1d0a9e6327b1de68c6d3851468694c1a.svg",
+    "static/media/GordonCenter.svg": "/stroke-index/static/media/GordonCenter.2fc07579c75c9a092491138e2792498d.svg",
+    "static/media/AHA_logo.svg": "/stroke-index/static/media/AHA_logo.12c80447059a763cf6272598d89ca1a9.svg",
+    "static/media/PoweredByLaerdal.svg": "/stroke-index/static/media/PoweredByLaerdal.7f981485389cd19a344c8bb0845fa2ef.svg",
+    "static/media/Pie_chart.svg": "/stroke-index/static/media/Pie_chart.5dea8c7c0f31165db26a95707d1bc4f8.svg",
+    "static/media/E-simulation.svg": "/stroke-index/static/media/E-simulation.af3e988e49aa11dbdc6f29a26c3a6197.svg",
+    "static/media/Screens.svg": "/stroke-index/static/media/Screens.791beef046c727cae54ffbcb6bc27390.svg",
+    "static/media/E-simulation_48_black.svg": "/stroke-index/static/media/E-simulation_48_black.3816ec9b1b57a2561742f9ac2006d40a.svg",
+    "static/media/Document_checked.svg": "/stroke-index/static/media/Document_checked.fee64a2e41ac1183e31523d238299f65.svg",
+    "static/media/Video_48_black.svg": "/stroke-index/static/media/Video_48_black.f6f7a31d9909adf44ef6c5643513cd5f.svg",
     "index.html": "/stroke-index/index.html",
     "main.ec2c7ba0.css.map": "/stroke-index/static/css/main.ec2c7ba0.css.map",
-    "main.47873a20.js.map": "/stroke-index/static/js/main.47873a20.js.map",
+    "main.87e308f7.js.map": "/stroke-index/static/js/main.87e308f7.js.map",
     "453.73fed29b.chunk.js.map": "/stroke-index/static/js/453.73fed29b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ec2c7ba0.css",
-    "static/js/main.47873a20.js"
+    "static/js/main.87e308f7.js"
   ]
 }
