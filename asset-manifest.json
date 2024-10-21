@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/stroke-index/static/css/main.ec2c7ba0.css",
-    "main.js": "/stroke-index/static/js/main.64e8b9f1.js",
+    "main.js": "/stroke-index/static/js/main.dce5c7e2.js",
     "static/js/453.73fed29b.chunk.js": "/stroke-index/static/js/453.73fed29b.chunk.js",
     "static/media/ESLS.svg": "/stroke-index/static/media/ESLS.1d0a9e6327b1de68c6d3851468694c1a.svg",
     "static/media/GordonCenter.svg": "/stroke-index/static/media/GordonCenter.2fc07579c75c9a092491138e2792498d.svg",
@@ -15,11 +15,11 @@
     "static/media/Video_48_black.svg": "/stroke-index/static/media/Video_48_black.f6f7a31d9909adf44ef6c5643513cd5f.svg",
     "index.html": "/stroke-index/index.html",
     "main.ec2c7ba0.css.map": "/stroke-index/static/css/main.ec2c7ba0.css.map",
-    "main.64e8b9f1.js.map": "/stroke-index/static/js/main.64e8b9f1.js.map",
+    "main.dce5c7e2.js.map": "/stroke-index/static/js/main.dce5c7e2.js.map",
     "453.73fed29b.chunk.js.map": "/stroke-index/static/js/453.73fed29b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ec2c7ba0.css",
-    "static/js/main.64e8b9f1.js"
+    "static/js/main.dce5c7e2.js"
   ]
 }
