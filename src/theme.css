@@ -15,8 +15,9 @@ body {
     justify-content: left;
     margin: 0;
     margin-top: -0.125rem;
-    padding: 0;
     padding-left: 1rem;
+    padding-top: .25rem;
+    padding-bottom: .25rem;
     box-sizing: border-box;
 }
 
@@ -29,9 +30,10 @@ body {
 
 .contentSeparator{
     border: 0.063rem solid #E5E5E5; /*1px*/
-    width: 90%; 
+    width: 95%; 
     margin: 0;
     padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 .topAlignedIcon {

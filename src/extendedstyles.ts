@@ -1,3 +1,4 @@
+import { fontGrid } from "@mui/material/styles/cssUtils";
 
 // Define the sx styles as variables
 const tipsBoxStyles = (theme: any) => ({
@@ -32,6 +33,14 @@ const bottomCardStyles = (theme: any) => ({
     width: '100%',
 });
 
+const introCardsStyle = {
+    borderRadius: 1, 
+    height: '4rem',
+    border: '0.063rem solid', // 1px
+    borderColor: '#D9D9D9', 
+    boxShadow: 'none',
+};
+
 const completionStatusStyle = {
     fontSize: '0.875rem',
     color: '#666666',
@@ -49,6 +58,7 @@ const startButtonStyle = {
     borderWidth: '0.125rem',
     marginLeft: 'auto',
     fontFamily: 'Lato, sans-serif',
+    fontWeight: 700, 
 };
 
 const introButtonStyle = {
@@ -71,5 +81,32 @@ const exitButtonStyle = {
     borderWidth: '0.125rem',
 };
 
+const completedBox = {
+    backgroundColor: '#ECFEF1',
+    borderRadius: '0.5rem',
+    padding: '1rem',
+    display: 'flex',
+    alignItems: 'flex-start',
+    marginTop: '1rem',
+};
+
+const completedBoxContent = { 
+    paddingTop: '0.5rem', 
+    paddingBottom: '1rem', 
+    paddingLeft: '0.5rem', 
+}
+
+const greatWorkText = {
+    color: '#13772A', 
+    fontFamily: 'Lato, sans-serif', 
+    fontSize: '1.5rem', 
+    fontWeight: 'bold',
+}
+
+const feelFreeText = { 
+    color: '#1F1F1F', 
+    fontFamily: 'Lato, sans-serif', 
+    fontSize: '1rem', 
+}
 // Export the styles
-export { tipsBoxStyles, iconStyle, itemBoxStyle, bottomCardStyles, completionStatusStyle, startButtonStyle, exitButtonStyle, introButtonStyle };
+export { tipsBoxStyles, iconStyle, itemBoxStyle, bottomCardStyles, completionStatusStyle, startButtonStyle, exitButtonStyle, introButtonStyle, introCardsStyle, completedBox, completedBoxContent, greatWorkText, feelFreeText };

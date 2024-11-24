@@ -2,20 +2,20 @@ import React from 'react';
 import { Card, CardContent, CardMedia, Typography, Box, Button } from '@mui/material';
 import { bottomCardStyles, completionStatusStyle, startButtonStyle } from '../extendedstyles';
 import theme from '../theme';
-import systemIcon from '../assets/stroke/icons/System_icon.png';
-import videoIcon from '../assets/stroke/icons/VideoWhite.png';
+import systemIcon from '../assets/stroke/icons/System_icon_teal.svg';
+import videoIcon from '../assets/stroke/icons/Video_teal.svg';
 
-interface ScenarioCardProps {
+interface ScenarioCardIntroProps {
     name: string;
     description: string;
     imageUrl: string;
     status: string;
+    cardType: string;
     url: string;
   }
   
   
-  const ScenarioCard: React.FC<ScenarioCardProps> = ({ name, description, imageUrl, status, url }) => {
-    const backgroundColorVideo = status === 'Video' ? '#92702F' : '#25837E';
+  const ScenarioCardIntro: React.FC<ScenarioCardIntroProps> = ({ name, description, imageUrl, status, cardType, url }) => {
     return (
       <Card className="index-card">
         <CardMedia
@@ -29,9 +29,9 @@ interface ScenarioCardProps {
         />
         <CardContent className="index-card-content">
           <div className='index-card-container'>
-            <Box className='indexCardBoxContainer' sx={{ backgroundColor: backgroundColorVideo }}>
-              <img src={status === 'Video' ? videoIcon : systemIcon} alt="name icon"/>
-              <Typography variant="body2" className='patientName' gutterBottom>
+            <Box className='indexCardBoxContainer' sx={{ backgroundColor: '#D4E9F2' }}>
+              <img src={cardType === 'Video' ? videoIcon : systemIcon} alt="name icon"/>
+              <Typography variant="body2" className='patientNameIntro' gutterBottom>
                 {name}
               </Typography>           
             </Box>
@@ -42,11 +42,11 @@ interface ScenarioCardProps {
           <div className="cardBottom">
             <hr className='contentSeparator'/>  
             <Box mt={2} sx={bottomCardStyles(theme)}>
-              <Typography variant="body2" gutterBottom sx={completionStatusStyle}>
+{/*               <Typography variant="body2" gutterBottom sx={completionStatusStyle}>
               {status === 'Incomplete' ? 'Incomplete' : ''}
-              </Typography>
-              <Button variant="outlined" color="primary" sx={startButtonStyle} href={url} disabled={true}> 
-                Start
+              </Typography> */}
+              <Button variant="outlined" color="primary" sx={startButtonStyle} href={url} disabled={cardType === 'Video'}> 
+                {cardType === 'Video' ? 'Play' : 'Start'}
               </Button>
             </Box>
           </div>
@@ -55,5 +55,5 @@ interface ScenarioCardProps {
     );
   };
 
-  export default ScenarioCard;  
+  export default ScenarioCardIntro;  
   

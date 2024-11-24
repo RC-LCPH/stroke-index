@@ -47,8 +47,15 @@ const theme = createTheme({
         root: {
           height: '100%',
           '&.patientName': {
-            fontSize: '0.75rem',
+            fontSize: '1rem',
             color: 'white',
+            paddingLeft: '.5rem',
+            paddingTop: '.5rem',
+            paddingBottom: '.25rem',
+          },
+          '&.patientNameIntro': {
+            fontSize: '1rem',
+            color: '#276D8B',
             paddingLeft: '.5rem',
             paddingTop: '.5rem',
             paddingBottom: '.25rem',
@@ -69,35 +76,6 @@ const theme = createTheme({
         },
       },
     },    
-    MuiTabs: {
-      styleOverrides: {
-        root: {
-          fontFamily: 'Lato, sans-serif',
-        },
-        indicator: {
-          top: 0, // Position the indicator at the top
-          bottom: 'unset', // Unset the bottom position
-          height: '0.125rem', // Set the height of the indicator
-        },
-      },
-    },
-    MuiTab: {
-      styleOverrides: {
-        root: {
-          fontFamily: 'Lato, sans-serif',
-          fontSize: '1.25rem',
-          textTransform: 'none', 
-          '&.Mui-selected': {
-            color: 'black', 
-            fontWeight: 'bold', 
-            borderTop: '0.125rem solid #CCCCCC', 
-            borderLeft: '0.063rem solid #CCCCCC', 
-            borderRight: '0.063rem solid #CCCCCC', 
-            borderBottom: '0.25rem solid #FFFFFF', //thicker border to overlap line
-          },
-        },
-      },
-    },
   },
 });
 

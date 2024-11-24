@@ -14,10 +14,11 @@ import eSimulationIconBlack from '../assets/stroke/icons/E-simulation_48_black.s
 
 const TipsBox = ({ theme }: { theme: any }) => {
     return (
+
         <Box sx={tipsBoxStyles(theme)}>
-            <Box display="flex" flexDirection="row" justifyContent="center">
+            <Box display="flex" flexDirection="row" justifyContent="center" >
             {/* Left Column */}
-                <Box display="flex" flexDirection="column" flex={1}>
+                <Box display="flex" flexDirection="column" flex={1} sx={{ marginRight: 3 }}>
                 <TipItem
                     iconSrc={screensIcon}
                     text="Complete four cases of your choice in your preferred order."
@@ -47,41 +48,6 @@ const TipsBox = ({ theme }: { theme: any }) => {
                 />
                 </Box>
             </Box>  
-
-            <Divider sx={{ my: 3 }} />
-      
-            <Grid container spacing={2}>
-                <Grid item xs={12} md={6}>
-                    <Card sx={{ borderRadius: 1, height: '4rem' }} >
-                        <CardContent sx={{ paddingTop: '0.5rem'}}>
-                            <Box display="flex" justifyContent="space-between" alignItems="center" >
-                                <Box display="flex" alignItems="center" sx={{ mb: -1 }}>
-                                    <img  src={videoIcon} alt="" className="topAlignedIcon" />
-                                    <Typography variant="body2">Watch tutorial video</Typography>
-                                </Box>
-                                <Button variant="outlined" color="primary" sx={introButtonStyle} href="" disabled={true}> 
-                                Play
-                                </Button>
-                            </Box>
-                        </CardContent>
-                    </Card>
-                </Grid>
-                <Grid item xs={12} md={6}>
-                <Card sx={{ borderRadius: 1, height: '4rem' }}>
-                    <CardContent sx={{ paddingTop: '0.5rem'}}>
-                        <Box display="flex" justifyContent="space-between" alignItems="center">
-                            <Box display="flex" alignItems="center" sx={{ mb: -1 }}>
-                                <img  src={eSimulationIconBlack} alt="" className="topAlignedIcon" />
-                                <Typography variant="body2">Try out a patient case</Typography>
-                            </Box>
-                            <Button variant="outlined" color="primary" sx={introButtonStyle} href={RAVI_KUMAR_URL}> 
-                            Start
-                            </Button>
-                        </Box>
-                    </CardContent>
-                </Card>
-                </Grid>
-            </Grid>
      
         </Box> 
     );

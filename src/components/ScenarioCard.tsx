@@ -28,12 +28,12 @@ interface ScenarioCardProps {
         <CardContent className="index-card-content">
           <div className='index-card-container'>
             <Box className='indexCardBoxContainer'>
-              <img src="/stroke-index/assets/System_icon.png" alt="name icon"/>
+            <img src="/stroke-index/assets/E-simulation_white.svg" alt="name icon" style={{ width: '1.5rem', height:'1.5rem'}}/>
               <Typography variant="body2" className='patientName' gutterBottom>
                 {name}
               </Typography>           
             </Box>
-            <Typography variant="body2" color="text.secondary" className="index-card-description">
+            <Typography variant="body2" color="text.secondary" className="index-card-description" sx={{marginRight: '1rem'}}>
               {description}
             </Typography>
           </div>

@@ -1,11 +1,13 @@
 import React from 'react';
 import { ThemeProvider } from '@mui/material/styles';
-import { CssBaseline, Container, Grid, Box } from '@mui/material';
+import { CssBaseline, Container, Grid, Box, Divider } from '@mui/material';
 import theme from './theme';
 import TipsBox from './components/TipsBoxIndex';
 import StrokeIndexTopBar from './components/StrokeIndexTopBar';
 import { scenarios } from './strokePatientsData';
+import { introScenarios } from './strokeIntroData';
 import ScenarioCard from './components/ScenarioCard';
+import ScenarioCardIntro from './components/ScenarioCardIntro';
 import poweredByLaerdal from './assets/stroke/PoweredByLaerdal.svg';
 
 
@@ -20,6 +22,17 @@ const App: React.FC = () => {
 
             <Box>
               <TipsBox theme={theme} />
+
+              <Grid container spacing={4}>
+                {introScenarios.map((scenarioIntroItem) => (
+                  <Grid item key={scenarioIntroItem.name} xs={12} sm={6} md={4}>
+                    <ScenarioCardIntro {...scenarioIntroItem} />
+                  </Grid>
+                ))}
+              </Grid>
+              
+              <Divider sx={{ my: 3 }} />
+
               <Grid container spacing={4}>
                 {scenarios.map((scenarioItem) => (
                   <Grid item key={scenarioItem.name} xs={12} sm={6} md={4}>
