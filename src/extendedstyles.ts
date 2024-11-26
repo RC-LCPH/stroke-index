@@ -3,7 +3,7 @@ import { fontGrid } from "@mui/material/styles/cssUtils";
 // Define the sx styles as variables
 const tipsBoxStyles = (theme: any) => ({
     backgroundColor: '#F1FBFE',
-    borderRadius: '1rem',
+    borderRadius: '.5rem',
     padding: {
       md: '1rem',
       lg: '1.5rem',
@@ -108,5 +108,27 @@ const feelFreeText = {
     fontFamily: 'Lato, sans-serif', 
     fontSize: '1rem', 
 }
+
+const infoBox = {
+    backgroundColor: '#D4E9F2',
+    color: '#215369',
+    borderRadius: '0.25rem',
+    padding: '.25rem, 1rem, 0.25rem, 1rem',
+}
 // Export the styles
-export { tipsBoxStyles, iconStyle, itemBoxStyle, bottomCardStyles, completionStatusStyle, startButtonStyle, exitButtonStyle, introButtonStyle, introCardsStyle, completedBox, completedBoxContent, greatWorkText, feelFreeText };
+export { 
+    tipsBoxStyles, 
+    iconStyle, 
+    itemBoxStyle, 
+    bottomCardStyles, 
+    completionStatusStyle, 
+    startButtonStyle, 
+    exitButtonStyle, 
+    introButtonStyle, 
+    introCardsStyle, 
+    completedBox, 
+    completedBoxContent, 
+    greatWorkText, 
+    feelFreeText, 
+    infoBox 
+};

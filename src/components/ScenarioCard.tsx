@@ -2,7 +2,9 @@ import React from 'react';
 import { Card, CardContent, CardMedia, Typography, Box, Button } from '@mui/material';
 import { bottomCardStyles, startButtonStyle } from '../extendedstyles';
 import theme from '../theme';
+import { introScenarios } from '../strokeIntroData';
 import CourseStatus from './CourseStatus';
+
 
 interface ScenarioCardProps {
     name: string;
@@ -10,10 +12,11 @@ interface ScenarioCardProps {
     imageUrl: string;
     status: string;
     url: string;
+    allIntroCompleted: boolean;
   }
   
-  
-  const ScenarioCard: React.FC<ScenarioCardProps> = ({ name, description, imageUrl, status, url }) => {
+  const ScenarioCard: React.FC<ScenarioCardProps> = ({ name, description, imageUrl, status, url, allIntroCompleted }) => {
+
     return (
       <Card className="index-card">
         <CardMedia
@@ -40,8 +43,8 @@ interface ScenarioCardProps {
           <div className="cardBottom">
             <hr className='contentSeparator'/>  
             <Box mt={2} sx={bottomCardStyles(theme)} display="flex" alignItems="center">
-{/*               <CourseStatus name={status === 'Incomplete' ? 'Incomplete' : 'Completed'} status={status === 'Incomplete' ? 'Incomplete' : 'Completed'} /> */}
-              <Button variant={status === 'Incomplete' ? 'contained' : 'outlined'} color="primary" sx={startButtonStyle} href={url}>
+              <CourseStatus name={status === 'Incomplete' ? 'Incomplete' : 'Completed'} status={status === 'Incomplete' ? 'Incomplete' : 'Completed'} /> 
+              <Button variant={status === 'Incomplete' ? 'contained' : 'outlined'} color="primary" sx={startButtonStyle} href={url}  disabled={!allIntroCompleted}>
                 {status === 'Incomplete' ? 'Start' : 'Retry'}
               </Button>
             </Box>
@@ -51,5 +54,4 @@ interface ScenarioCardProps {
     );
   };
 
-  export default ScenarioCard;  
-  
+  export default ScenarioCard;

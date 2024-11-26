@@ -8,9 +8,9 @@ body {
 
 .indexCardBoxContainer {
     background-color: #25837E;
-    width: 100%; /* Full width of the parent container (card) */
-    height: auto; /* Fixed height for consistency across all cards */
-    display: flex; /* Center content vertically and horizontally */
+    width: 100%; 
+    height: auto; 
+    display: flex; 
     align-items: center;
     justify-content: left;
     margin: 0;
@@ -53,6 +53,14 @@ body {
     border: 0.05rem solid #CCCCCC;
     width: 100%;
     margin-top: -0.2rem;
+}
+
+    .poweredByLaerdal  {
+    font-family: 'Lato';
+    font-size: '1.125rem'; 
+    color: "#666"; 
+    font-weight: 400; 
+    margin-top: .1;
 }
 
 
