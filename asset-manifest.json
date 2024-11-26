@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.css": "/stroke-index/static/css/main.a558ffe4.css",
-    "main.js": "/stroke-index/static/js/main.c2a0197b.js",
+    "main.css": "/stroke-index/static/css/main.420ca7e9.css",
+    "main.js": "/stroke-index/static/js/main.55acfe04.js",
     "static/js/453.73fed29b.chunk.js": "/stroke-index/static/js/453.73fed29b.chunk.js",
     "static/media/ESLS.svg": "/stroke-index/static/media/ESLS.1d0a9e6327b1de68c6d3851468694c1a.svg",
     "static/media/GordonCenter.svg": "/stroke-index/static/media/GordonCenter.2fc07579c75c9a092491138e2792498d.svg",
     "static/media/AHA_logo.svg": "/stroke-index/static/media/AHA_logo.12c80447059a763cf6272598d89ca1a9.svg",
-    "static/media/PoweredByLaerdal.svg": "/stroke-index/static/media/PoweredByLaerdal.7f981485389cd19a344c8bb0845fa2ef.svg",
+    "static/media/Certificate.svg": "/stroke-index/static/media/Certificate.ff829af106fa0d1604872cb366ade5cd.svg",
     "static/media/Pie_chart.svg": "/stroke-index/static/media/Pie_chart.5dea8c7c0f31165db26a95707d1bc4f8.svg",
     "static/media/E-simulation.svg": "/stroke-index/static/media/E-simulation.af3e988e49aa11dbdc6f29a26c3a6197.svg",
     "static/media/Screens.svg": "/stroke-index/static/media/Screens.791beef046c727cae54ffbcb6bc27390.svg",
@@ -14,12 +14,14 @@
     "static/media/System_icon_teal.svg": "/stroke-index/static/media/System_icon_teal.72ab690b9132a08c1dc596124ba50ffe.svg",
     "static/media/Video_teal.svg": "/stroke-index/static/media/Video_teal.e7d9ec984d5e7e94ae18dcc625bc7d17.svg",
     "index.html": "/stroke-index/index.html",
-    "main.a558ffe4.css.map": "/stroke-index/static/css/main.a558ffe4.css.map",
-    "main.c2a0197b.js.map": "/stroke-index/static/js/main.c2a0197b.js.map",
+    "static/media/Bookmark_on.svg": "/stroke-index/static/media/Bookmark_on.d0385d3b44da1f354ae51b1d41e43251.svg",
+    "static/media/Bookmark_off.svg": "/stroke-index/static/media/Bookmark_off.eacb7dee3d661e488eca0ef1c379c23c.svg",
+    "main.420ca7e9.css.map": "/stroke-index/static/css/main.420ca7e9.css.map",
+    "main.55acfe04.js.map": "/stroke-index/static/js/main.55acfe04.js.map",
     "453.73fed29b.chunk.js.map": "/stroke-index/static/js/453.73fed29b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a558ffe4.css",
-    "static/js/main.c2a0197b.js"
+    "static/css/main.420ca7e9.css",
+    "static/js/main.55acfe04.js"
   ]
 }
