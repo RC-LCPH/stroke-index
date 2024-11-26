@@ -12,7 +12,7 @@ const InfoBox: React.FC = () => {
     return (
         <Collapse in={open} >
             <Alert variant="filled" severity="info" sx={infoBox} onClose={() => { setOpen(false);}}>
-                "Support for tablets and Chromebooks will be available in early 2025. Currently, our software is supported on Windows (Chrome and Edge) and Mac (Chrome and Safari)."
+                Supported on Windows (Chrome and Edge) and Mac (Chrome and Safari). Support for tablets and Chromebooks will be available in early 2025.
             </Alert>
         </Collapse>
     );
